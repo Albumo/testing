@@ -1,0 +1,112 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+[role="button"],
+[type="button"] {
+    cursor: pointer;
+}
+
+ul {
+    list-style: disc;
+}
+
+label {
+    cursor: pointer;
+}
+
+body {
+    font-family: $font-main;
+    line-height: $line-height;
+}
+
+@include respond-from(to-md) {
+    * {
+        outline: none;
+    }
+}
+
+// animation
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 50px #fff, 0 0 100px #fff;
+    }
+
+    10%, 90% {
+        color: #253854;
+        text-shadow: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInLeftAttribute {
+    0% {
+        opacity: 0;
+        transform: translate3d(-80%, -50%, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, -50%, 0)
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(50%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}

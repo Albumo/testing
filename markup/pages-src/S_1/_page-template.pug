@@ -1,0 +1,19 @@
+include ../components/common/head
+include ../components/common/include-js
+include ../components/common/img-svg
+
+include ../components/%=component_header=%/header/header
+include ../components/%=component_banner=%/banner/banner
+include ../components/%=component_form=%/form/form
+
+doctype html
+html(class="no-js" lang="en")
+    head
+        +head
+    body
+        .__cl-w-outer___
+            block content
+
+        +include-js
+
+        block scripts

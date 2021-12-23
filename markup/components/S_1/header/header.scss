@@ -1,0 +1,10 @@
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    background: $header-bg;
+    border: $header-bd;
+    color: $header-color;
+    transition: all .35s ease-in-out;
+
+}

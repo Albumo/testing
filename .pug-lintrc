@@ -1,0 +1,53 @@
+{
+  "disallowAttributeConcatenation": null,
+  "disallowAttributeInterpolation": null,
+  "disallowBlockExpansion": null,
+  "disallowClassAttributeWithStaticValue": null,
+  "disallowClassLiterals": null,
+  "disallowClassLiteralsBeforeAttributes": null,
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "disallowDuplicateAttributes": true,
+  "disallowHtmlText": null,
+  "disallowIdAttributeWithStaticValue": null,
+  "disallowIdLiterals": null,
+  "disallowIdLiteralsBeforeAttributes": null,
+  "disallowMultipleLineBreaks": true,
+  "disallowSpaceAfterCodeOperator": null,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowTrailingSpaces": null,
+  "disallowSpecificTags": null,
+  "disallowStringConcatenation": null,
+  "disallowStringInterpolation": null,
+  "disallowTagInterpolation": null,
+  "maximumNumberOfLines": null,
+  "requireClassLiteralsBeforeAttributes": null,
+  "requireClassLiteralsBeforeIdLiterals": null,
+  "requireIdLiteralsBeforeAttributes": null,
+  "requireLineFeedAtFileEnd": null,
+  "requireLowerCaseAttributes": null,
+  "requireLowerCaseTags": true,
+  "requireSpaceAfterCodeOperator": true,
+  "requireSpacesInsideAttributeBrackets": null,
+  "requireSpecificAttributes": [{
+    "form": "action"
+  }, {
+    "img": ["src", "alt"]
+  },  {
+     "a": "href"
+   }, {
+    "input": "type"
+  }, {
+    "input[type=submit]": "value"
+  }],
+  "requireStrictEqualityOperators": true,
+  "validateAttributeQuoteMarks": "\"",
+  "validateAttributeSeparator": {
+    "separator": " ",
+    "multiLineSeparator": "\n  "
+  },
+  "validateDivTags": true,
+  "validateExtensions": null,
+  "validateIndentation": 4,
+  "validateLineBreaks": null,
+  "validateSelfClosingTags": true
+}

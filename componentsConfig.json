@@ -1,0 +1,17 @@
+{
+  "component_header": {
+    "number": "S_1",
+    "name": "header"
+  },
+
+
+  "component_form": {
+    "number": "S_1",
+    "name": "form"
+  },
+
+  "component_banner": {
+    "number": "S_1",
+    "name": "banner"
+  }
+}

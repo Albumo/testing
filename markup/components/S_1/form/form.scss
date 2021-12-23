@@ -1,0 +1,156 @@
+.form {
+    &__wrap {
+        position: relative;
+    }
+
+    &__decor {
+        position: absolute;
+        left: -20px;
+        top: 12%;
+        z-index: 9;
+        max-width: 60px;
+    }
+
+    &__decor-second {
+        position: absolute;
+        max-width: 114px;
+        right: -30px;
+        top: 1%;
+        z-index: 9;
+    }
+
+    &__decor-third {
+        position: absolute;
+        left: unset;
+        right: -35px;
+        bottom: 0;
+        max-width: 107px;
+        z-index: 9;
+    }
+
+    &__content {
+        padding: 100px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        width: 100%;
+        background-image: url('/static/img/content/bg-2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+    }
+
+    &__content-text {
+        color: $form-text;
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+
+    &__register-form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    &__form-control {
+        padding: 16px 20px 16px 40px;
+        width: 100%;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 300;
+
+        &::placeholder{
+            color: #E0E0E0!important;
+
+        }
+
+    }
+
+    &__input-ico {
+        position: absolute;
+        width: 24px;
+        min-height: 24px;
+        height: 24px;
+        margin: 0 10px;
+    }
+
+    &__form-checkbox {
+        color: #fff;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        input {
+            -webkit-appearance: none;
+            width: 20px;
+            margin-right: 5px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid #6CEEC7;
+            display: inline-block;
+            position: relative;
+
+
+            &:checked {
+                color: #99a1a7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:after {
+                    content: '\2714';
+                    font-size: 16px;
+                    color: #6CEEC7;
+                }
+            }
+        }
+
+    }
+
+    &__login {
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    @include respond-from(sm) {
+
+        &__register-form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        &__form-group {
+            width: 48%;
+            max-width: 300px;
+
+
+        }
+
+    }
+
+}
+
+option {
+    font-weight: 300;
+    color: #5E5E5E;
+    max-width: 280px;
+}
+
+optgroup {
+    width: 200px;
+    overflow: hidden;
+    max-width: 280px;
+}
