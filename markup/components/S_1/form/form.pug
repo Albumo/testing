@@ -23,263 +23,38 @@ mixin form
                             img.form__input-ico(class="lazyload" src="static/img/content/country_icon.svg" alt="country icon")
                             select#your-country.form__form-control(type='country' name='name'  required)
                                 option(value='0' label='Country ' selected='selected') Select a country ...
-                                optgroup#country-optgroup-Africa(label='Africa')
-                                    option(value='DZ' label='Algeria') Algeria
-                                    option(value='AO' label='Angola') Angola
-                                    option(value='BJ' label='Benin') Benin
-                                    option(value='BW' label='Botswana') Botswana
-                                    option(value='BF' label='Burkina Faso') Burkina Faso
-                                    option(value='BI' label='Burundi') Burundi
-                                    option(value='CM' label='Cameroon') Cameroon
-                                    option(value='CV' label='Cape Verde') Cape Verde
-                                    option(value='CF' label='Central African Republic') Central African Republic
-                                    option(value='TD' label='Chad') Chad
-                                    option(value='KM' label='Comoros') Comoros
-                                    option(value='CG' label='Congo - Brazzaville') Congo - Brazzaville
-                                    option(value='CD' label='Congo - Kinshasa') Congo - Kinshasa
-                                    option(value='CI' label='Côte d’Ivoire') Côte d’Ivoire
-                                    option(value='DJ' label='Djibouti') Djibouti
-                                    option(value='EG' label='Egypt') Egypt
-                                    option(value='GQ' label='Equatorial Guinea') Equatorial Guinea
-                                    option(value='ER' label='Eritrea') Eritrea
-                                    option(value='ET' label='Ethiopia') Ethiopia
-                                    option(value='GA' label='Gabon') Gabon
-                                    option(value='GM' label='Gambia') Gambia
-                                    option(value='GH' label='Ghana') Ghana
-                                    option(value='GN' label='Guinea') Guinea
-                                    option(value='GW' label='Guinea-Bissau') Guinea-Bissau
-                                    option(value='KE' label='Kenya') Kenya
-                                    option(value='LS' label='Lesotho') Lesotho
-                                    option(value='LR' label='Liberia') Liberia
-                                    option(value='LY' label='Libya') Libya
-                                    option(value='MG' label='Madagascar') Madagascar
-                                    option(value='MW' label='Malawi') Malawi
-                                    option(value='ML' label='Mali') Mali
-                                    option(value='MR' label='Mauritania') Mauritania
-                                    option(value='MU' label='Mauritius') Mauritius
-                                    option(value='YT' label='Mayotte') Mayotte
-                                    option(value='MA' label='Morocco') Morocco
-                                    option(value='MZ' label='Mozambique') Mozambique
-                                    option(value='NA' label='Namibia') Namibia
-                                    option(value='NE' label='Niger') Niger
-                                    option(value='NG' label='Nigeria') Nigeria
-                                    option(value='RW' label='Rwanda') Rwanda
-                                    option(value='RE' label='Réunion') Réunion
-                                    option(value='SH' label='Saint Helena') Saint Helena
-                                    option(value='SN' label='Senegal') Senegal
-                                    option(value='SC' label='Seychelles') Seychelles
-                                    option(value='SL' label='Sierra Leone') Sierra Leone
-                                    option(value='SO' label='Somalia') Somalia
-                                    option(value='ZA' label='South Africa') South Africa
-                                    option(value='SD' label='Sudan') Sudan
-                                    option(value='SZ' label='Swaziland') Swaziland
-                                    option(value='ST' label='São Tomé and Príncipe') São Tomé and Príncipe
-                                    option(value='TZ' label='Tanzania') Tanzania
-                                    option(value='TG' label='Togo') Togo
-                                    option(value='TN' label='Tunisia') Tunisia
-                                    option(value='UG' label='Uganda') Uganda
-                                    option(value='EH' label='Western Sahara') Western Sahara
-                                    option(value='ZM' label='Zambia') Zambia
-                                    option(value='ZW' label='Zimbabwe') Zimbabwe
-                                optgroup#country-optgroup-Americas(label='Americas')
-                                    option(value='AI' label='Anguilla') Anguilla
-                                    option(value='AG' label='Antigua and Barbuda') Antigua and Barbuda
-                                    option(value='AR' label='Argentina') Argentina
-                                    option(value='AW' label='Aruba') Aruba
-                                    option(value='BS' label='Bahamas') Bahamas
-                                    option(value='BB' label='Barbados') Barbados
-                                    option(value='BZ' label='Belize') Belize
-                                    option(value='BM' label='Bermuda') Bermuda
-                                    option(value='BO' label='Bolivia') Bolivia
-                                    option(value='BR' label='Brazil') Brazil
-                                    option(value='VG' label='British Virgin Islands') British Virgin Islands
-                                    option(value='CA' label='Canada') Canada
-                                    option(value='KY' label='Cayman Islands') Cayman Islands
-                                    option(value='CL' label='Chile') Chile
-                                    option(value='CO' label='Colombia') Colombia
-                                    option(value='CR' label='Costa Rica') Costa Rica
-                                    option(value='CU' label='Cuba') Cuba
-                                    option(value='DM' label='Dominica') Dominica
-                                    option(value='DO' label='Dominican Republic') Dominican Republic
-                                    option(value='EC' label='Ecuador') Ecuador
-                                    option(value='SV' label='El Salvador') El Salvador
-                                    option(value='FK' label='Falkland Islands') Falkland Islands
-                                    option(value='GF' label='French Guiana') French Guiana
-                                    option(value='GL' label='Greenland') Greenland
-                                    option(value='GD' label='Grenada') Grenada
-                                    option(value='GP' label='Guadeloupe') Guadeloupe
-                                    option(value='GT' label='Guatemala') Guatemala
-                                    option(value='GY' label='Guyana') Guyana
-                                    option(value='HT' label='Haiti') Haiti
-                                    option(value='HN' label='Honduras') Honduras
-                                    option(value='JM' label='Jamaica') Jamaica
-                                    option(value='MQ' label='Martinique') Martinique
-                                    option(value='MX' label='Mexico') Mexico
-                                    option(value='MS' label='Montserrat') Montserrat
-                                    option(value='AN' label='Netherlands Antilles') Netherlands Antilles
-                                    option(value='NI' label='Nicaragua') Nicaragua
-                                    option(value='PA' label='Panama') Panama
-                                    option(value='PY' label='Paraguay') Paraguay
-                                    option(value='PE' label='Peru') Peru
-                                    option(value='PR' label='Puerto Rico') Puerto Rico
-                                    option(value='BL' label='Saint Barthélemy') Saint Barthélemy
-                                    option(value='KN' label='Saint Kitts and Nevis') Saint Kitts and Nevis
-                                    option(value='LC' label='Saint Lucia') Saint Lucia
-                                    option(value='MF' label='Saint Martin') Saint Martin
-                                    option(value='PM' label='Saint Pierre and Miquelon') Saint Pierre and Miquelon
-                                    option(value='VC' label='Saint Vincent and the Grenadines') Saint Vincent and the Grenadines
-                                    option(value='SR' label='Suriname') Suriname
-                                    option(value='TT' label='Trinidad and Tobago') Trinidad and Tobago
-                                    option(value='TC' label='Turks and Caicos Islands') Turks and Caicos Islands
-                                    option(value='VI' label='U.S. Virgin Islands') U.S. Virgin Islands
-                                    option(value='US' label='United States') United States
-                                    option(value='UY' label='Uruguay') Uruguay
-                                    option(value='VE' label='Venezuela') Venezuela
-                                optgroup#country-optgroup-Asia(label='Asia')
-                                    option(value='AF' label='Afghanistan') Afghanistan
-                                    option(value='AM' label='Armenia') Armenia
-                                    option(value='AZ' label='Azerbaijan') Azerbaijan
-                                    option(value='BH' label='Bahrain') Bahrain
-                                    option(value='BD' label='Bangladesh') Bangladesh
-                                    option(value='BT' label='Bhutan') Bhutan
-                                    option(value='BN' label='Brunei') Brunei
-                                    option(value='KH' label='Cambodia') Cambodia
-                                    option(value='CN' label='China') China
-                                    option(value='GE' label='Georgia') Georgia
-                                    option(value='HK' label='Hong Kong SAR China') Hong Kong SAR China
-                                    option(value='IN' label='India') India
-                                    option(value='ID' label='Indonesia') Indonesia
-                                    option(value='IR' label='Iran') Iran
-                                    option(value='IQ' label='Iraq') Iraq
-                                    option(value='IL' label='Israel') Israel
-                                    option(value='JP' label='Japan') Japan
-                                    option(value='JO' label='Jordan') Jordan
-                                    option(value='KZ' label='Kazakhstan') Kazakhstan
-                                    option(value='KW' label='Kuwait') Kuwait
-                                    option(value='KG' label='Kyrgyzstan') Kyrgyzstan
-                                    option(value='LA' label='Laos') Laos
-                                    option(value='LB' label='Lebanon') Lebanon
-                                    option(value='MO' label='Macau SAR China') Macau SAR China
-                                    option(value='MY' label='Malaysia') Malaysia
-                                    option(value='MV' label='Maldives') Maldives
-                                    option(value='MN' label='Mongolia') Mongolia
-                                    option(value='MM' label='Myanmar [Burma]') Myanmar [Burma]
-                                    option(value='NP' label='Nepal') Nepal
-                                    option(value='NT' label='Neutral Zone') Neutral Zone
-                                    option(value='KP' label='North Korea') North Korea
-                                    option(value='OM' label='Oman') Oman
-                                    option(value='PK' label='Pakistan') Pakistan
-                                    option(value='PS' label='Palestinian Territories') Palestinian Territories
-                                    option(value='YD' label="People's Democratic Republic of Yemen") People's Democratic Republic of Yemen
-                                    option(value='PH' label='Philippines') Philippines
-                                    option(value='QA' label='Qatar') Qatar
-                                    option(value='SA' label='Saudi Arabia') Saudi Arabia
-                                    option(value='SG' label='Singapore') Singapore
-                                    option(value='KR' label='South Korea') South Korea
-                                    option(value='LK' label='Sri Lanka') Sri Lanka
-                                    option(value='SY' label='Syria') Syria
-                                    option(value='TW' label='Taiwan') Taiwan
-                                    option(value='TJ' label='Tajikistan') Tajikistan
-                                    option(value='TH' label='Thailand') Thailand
-                                    option(value='TL' label='Timor-Leste') Timor-Leste
-                                    option(value='TR' label='Turkey') Turkey
-                                    option(value='TM' label='Turkmenistan') Turkmenistan
-                                    option(value='AE' label='United Arab Emirates') United Arab Emirates
-                                    option(value='UZ' label='Uzbekistan') Uzbekistan
-                                    option(value='VN' label='Vietnam') Vietnam
-                                    option(value='YE' label='Yemen') Yemen
-                                optgroup#country-optgroup-Europe(label='Europe')
-                                    option(value='AL' label='Albania') Albania
-                                    option(value='AD' label='Andorra') Andorra
-                                    option(value='AT' label='Austria') Austria
-                                    option(value='BY' label='Belarus') Belarus
-                                    option(value='BE' label='Belgium') Belgium
-                                    option(value='BA' label='Bosnia and Herzegovina') Bosnia and Herzegovina
-                                    option(value='BG' label='Bulgaria') Bulgaria
-                                    option(value='HR' label='Croatia') Croatia
-                                    option(value='CY' label='Cyprus') Cyprus
-                                    option(value='CZ' label='Czech Republic') Czech Republic
-                                    option(value='DK' label='Denmark') Denmark
-                                    option(value='DD' label='East Germany') East Germany
-                                    option(value='EE' label='Estonia') Estonia
-                                    option(value='FO' label='Faroe Islands') Faroe Islands
-                                    option(value='FI' label='Finland') Finland
-                                    option(value='FR' label='France') France
-                                    option(value='DE' label='Germany') Germany
-                                    option(value='GI' label='Gibraltar') Gibraltar
-                                    option(value='GR' label='Greece') Greece
-                                    option(value='GG' label='Guernsey') Guernsey
-                                    option(value='HU' label='Hungary') Hungary
-                                    option(value='IS' label='Iceland') Iceland
-                                    option(value='IE' label='Ireland') Ireland
-                                    option(value='IM' label='Isle of Man') Isle of Man
-                                    option(value='IT' label='Italy') Italy
-                                    option(value='JE' label='Jersey') Jersey
-                                    option(value='LV' label='Latvia') Latvia
-                                    option(value='LI' label='Liechtenstein') Liechtenstein
-                                    option(value='LT' label='Lithuania') Lithuania
-                                    option(value='LU' label='Luxembourg') Luxembourg
-                                    option(value='MK' label='Macedonia') Macedonia
-                                    option(value='MT' label='Malta') Malta
-                                    option(value='FX' label='Metropolitan France') Metropolitan France
-                                    option(value='MD' label='Moldova') Moldova
-                                    option(value='MC' label='Monaco') Monaco
-                                    option(value='ME' label='Montenegro') Montenegro
-                                    option(value='NL' label='Netherlands') Netherlands
-                                    option(value='NO' label='Norway') Norway
-                                    option(value='PL' label='Poland') Poland
-                                    option(value='PT' label='Portugal') Portugal
-                                    option(value='RO' label='Romania') Romania
-                                    option(value='RU' label='Russia') Russia
-                                    option(value='SM' label='San Marino') San Marino
-                                    option(value='RS' label='Serbia') Serbia
-                                    option(value='CS' label='Serbia and Montenegro') Serbia and Montenegro
-                                    option(value='SK' label='Slovakia') Slovakia
-                                    option(value='SI' label='Slovenia') Slovenia
-                                    option(value='ES' label='Spain') Spain
-                                    option(value='SJ' label='Svalbard and Jan Mayen') Svalbard and Jan Mayen
-                                    option(value='SE' label='Sweden') Sweden
-                                    option(value='CH' label='Switzerland') Switzerland
-                                    option(value='UA' label='Ukraine') Ukraine
-                                    option(value='SU' label='Union of Soviet Socialist Republics') Union of Soviet Socialist Republics
-                                    option(value='GB' label='United Kingdom') United Kingdom
-                                    option(value='VA' label='Vatican City') Vatican City
-                                    option(value='AX' label='Åland Islands') Åland Islands
-                                optgroup#country-optgroup-Oceania(label='Oceania')
-                                    option(value='AS' label='American Samoa') American Samoa
-                                    option(value='AQ' label='Antarctica') Antarctica
-                                    option(value='AU' label='Australia') Australia
-                                    option(value='BV' label='Bouvet Island') Bouvet Island
-                                    option(value='IO' label='British Indian Ocean Territory') British Indian Ocean Territory
-                                    option(value='CX' label='Christmas Island') Christmas Island
-                                    option(value='CC' label='Cocos [Keeling] Islands') Cocos [Keeling] Islands
-                                    option(value='CK' label='Cook Islands') Cook Islands
-                                    option(value='FJ' label='Fiji') Fiji
-                                    option(value='PF' label='French Polynesia') French Polynesia
-                                    option(value='TF' label='French Southern Territories') French Southern Territories
-                                    option(value='GU' label='Guam') Guam
-                                    option(value='HM' label='Heard Island and McDonald Islands') Heard Island and McDonald Islands
-                                    option(value='KI' label='Kiribati') Kiribati
-                                    option(value='MH' label='Marshall Islands') Marshall Islands
-                                    option(value='FM' label='Micronesia') Micronesia
-                                    option(value='NR' label='Nauru') Nauru
-                                    option(value='NC' label='New Caledonia') New Caledonia
-                                    option(value='NZ' label='New Zealand') New Zealand
-                                    option(value='NU' label='Niue') Niue
-                                    option(value='NF' label='Norfolk Island') Norfolk Island
-                                    option(value='MP' label='Northern Mariana Islands') Northern Mariana Islands
-                                    option(value='PW' label='Palau') Palau
-                                    option(value='PG' label='Papua New Guinea') Papua New Guinea
-                                    option(value='PN' label='Pitcairn Islands') Pitcairn Islands
-                                    option(value='WS' label='Samoa') Samoa
-                                    option(value='SB' label='Solomon Islands') Solomon Islands
-                                    option(value='GS' label='South Georgia and the South Sandwich Islands') South Georgia and the South Sandwich Islands
-                                    option(value='TK' label='Tokelau') Tokelau
-                                    option(value='TO' label='Tonga') Tonga
-                                    option(value='TV' label='Tuvalu') Tuvalu
-                                    option(value='UM' label='U.S. Minor Outlying Islands') U.S. Minor Outlying Islands
-                                    option(value='VU' label='Vanuatu') Vanuatu
-                                    option(value='WF' label='Wallis and Futuna') Wallis and Futuna
+                                option(value='DZ' label='Algeria') Algeria
+                                option(value='AO' label='Angola') Angola
+                                option(value='BJ' label='Benin') Benin
+                                option(value='BW' label='Botswana') Botswana
+                                option(value='BF' label='Burkina Faso') Burkina Faso
+                                option(value='BI' label='Burundi') Burundi
+                                option(value='CM' label='Cameroon') Cameroon
+                                option(value='CV' label='Cape Verde') Cape Verde
+                                option(value='CF' label='Central African Republic') Central African Republic
+                                option(value='TD' label='Chad') Chad
+                                option(value='KM' label='Comoros') Comoros
+                                option(value='CG' label='Congo - Brazzaville') Congo - Brazzaville
+                                option(value='CD' label='Congo - Kinshasa') Congo - Kinshasa
+                                option(value='CI' label='Côte d’Ivoire') Côte d’Ivoire
+                                option(value='DJ' label='Djibouti') Djibouti
+                                option(value='EG' label='Egypt') Egypt
+                                option(value='GQ' label='Equatorial Guinea') Equatorial Guinea
+                                option(value='ER' label='Eritrea') Eritrea
+                                option(value='ET' label='Ethiopia') Ethiopia
+                                option(value='GA' label='Gabon') Gabon
+                                option(value='GM' label='Gambia') Gambia
+                                option(value='GH' label='Ghana') Ghana
+                                option(value='GN' label='Guinea') Guinea
+                                option(value='GW' label='Guinea-Bissau') Guinea-Bissau
+                                option(value='KE' label='Kenya') Kenya
+                                option(value='LS' label='Lesotho') Lesotho
+                                option(value='LR' label='Liberia') Liberia
+                                option(value='LY' label='Libya') Libya
+                                option(value='MG' label='Madagascar') Madagascar
+                                option(value='MW' label='Malawi') Malawi
+                                option(value='ML' label='Mali') Mali
+                                option(value='MR' label='Mauritania') Mauritania
 
                         .form__form-group
                             img.form__input-ico(class="lazyload" src="static/img/content/phone_icon.svg" alt="phone icon")
